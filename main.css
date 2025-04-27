@@ -1,0 +1,363 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000000;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+nav a.active {
+  color: #CB6CE6;
+  font-weight: bold;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 6rem; 
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  color: #CB6CE6;
+  transition: color 0.3s ease;
+}
+
+.btn-login {
+  background-color: #CB6CE6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero-banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.concerts {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  justify-content: center;
+}
+
+.concert-card {
+  background-color: #222;
+  border-radius: 10px;
+  min-width: 200px;
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid white;
+}
+
+.concert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px #CB6CE6(184, 110, 255, 0.3);
+}
+
+.concert-card img {
+  width: 240px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.concert-card div {
+  padding: 0.5rem;
+}
+
+.testimonial-title {
+  background-color: #CB6CE6;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 3rem;
+}
+
+.testimonials-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 280px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transform: translateY(-2px);
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(50, 49, 51, 0.3);
+}
+
+.testimonial-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.testimonial-card.highlighted {
+  background-color: #CB6CE6;
+  color: #fff;
+}
+
+footer {
+  background-color: #CB6CE6;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 300px;
+}
+
+.footer-image {
+  flex: 1;
+  min-width: 300px;
+  overflow: hidden;
+}
+
+.footer-image img {
+  width: 900px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.footer-content {
+  flex: 1;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.footer-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 20px;
+  width: 250px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  color: #CB6CE6;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #f1e4ff;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 0.3rem 0.8rem;
+  margin: 0 1rem; /* Ajusté el margen para que esté más cerca de los otros elementos en escritorio */
+  max-width: 200px;
+  width: 100%;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.search-icon {
+  color: #fff;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between; /* Aseguramos que el logo y el botón de menú estén separados */
+  }
+
+  .menu-horizontal {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: flex-start; /* Alineamos los elementos a la izquierda en el menú móvil */
+    background-color: black;
+    height: 100vh;
+    overflow-y: auto;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 999;
+    opacity: 0;
+    padding-top: 60px; /* Añadimos padding para que el contenido no quede detrás del botón de cerrar */
+  }
+
+  .menu-horizontal.menu_opened {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .menu-horizontal nav {
+    display: flex;
+    flex-direction: column; /* Alineamos los enlaces verticalmente */
+    width: 100%; /* Ocupar todo el ancho del menú */
+  }
+
+  .menu-horizontal nav a {
+    color: white;
+    line-height: 40px; /* Reduje la altura de línea para mejor espaciado */
+    font-size: 1.2rem; /* Reduje el tamaño de la fuente */
+    padding: 1rem 2rem; /* Añadí padding para que los enlaces sean más fáciles de tocar */
+    border-bottom: 1px solid #eee; /* Añadí un separador entre enlaces */
+    margin: 0; /* Eliminé márgenes innecesarios */
+    display: block; /* Aseguramos que cada enlace ocupe una línea completa */
+  }
+
+  .menu-horizontal nav a:hover,
+  .menu-horizontal nav a.selected {
+    color: purple;
+    text-decoration: underline;
+  }
+
+  .menu-horizontal nav a:focus {
+    outline: 2px dashed blue;
+    outline-offset: 4px;
+  }
+
+  .menu-horizontal nav a::after {
+    content: none;
+  }
+
+  .search-bar {
+    margin: 1rem 2rem; /* Ajusté el margen de la barra de búsqueda */
+    border: 1px solid #ccc; /* Cambié el color del borde para mejor visibilidad */
+    border-radius: 5px; /* Reduje el radio del borde */
+  }
+
+  .btn-login {
+    margin: 1rem 2rem; /* Ajusté el margen del botón de inicio de sesión */
+    border-radius: 5px; /* Reduje el radio del borde */
+    padding: 0.75rem 1.5rem; /* Ajusté el padding del botón */
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 1rem; /* Ajusté el margen del botón de abrir */
+  }
+
+  .close-menu {
+    align-self: flex-start; /* Alineamos el botón de cerrar en la esquina superior izquierda */
+    padding: 1rem; /* Ajusté el padding del botón de cerrar */
+    margin-left: 1rem; /* Añadí margen izquierdo al botón de cerrar */
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
