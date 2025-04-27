@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000000;
+  }
+
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  
+  header nav a {
+    color: #fff;
+    margin: 0 6rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  header nav a:hover {
+    color: #b86eff;
+    transition: color 0.3s ease;
+  }
+  
+  .btn-login {
+    background-color: #b86eff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 0.3rem 0.8rem;
+    margin: 0 2rem;
+    max-width: 200px;
+    width: 100%;
+  }
+  
+  .search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+  
+  .search-icon {
+    color: #fff;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  main {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .highlight {
+    color: #CB6CE6;
+  }
+  
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    color: #000;
+    padding: 2rem 1rem;
+    width: 230px;
+    min-height: 280px;
+    border-radius: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 20px rgba(184, 110, 255, 0.3);
+  }
+  .card .icon {
+    font-size: 2rem;
+    align-self: center; 
+    margin-bottom: 1rem; 
+  }
+
+  nav a.active {
+    color: #CB6CE6; 
+    font-weight: bold; 
+  }
+  
+  .card.purple {
+    background-color: #CB6CE6;
+    color: #fff;
+  }
+  
+  .link {
+    margin-top: 2rem;
+  }
+  
+  .link a {
+    color: #CB6CE6;
+    text-decoration: none;
+  }
+
+  footer {
+    background-color: #CB6CE6;
+    color: #fff;
+    margin-top: 3rem;
+  }
+  
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+  }
+  
+  .footer-image {
+    flex: 1;
+    min-width: 300px;
+    overflow: hidden;
+  }
+  
+  .footer-image img {
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .footer-content {
+    flex: 1;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+  }
+  
+  .footer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .newsletter-form input[type="email"] {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    font-size: 1rem;
+  }
+  
+  .newsletter-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #fff;
+    color: #CB6CE6;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #f1e4ff;
+  }
+  
+  .footer-links {
+    margin-top: 1rem;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+ /* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between; /* Aseguramos que el logo y el botón de menú estén separados */
+  }
+
+  .menu-horizontal {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: flex-start; /* Alineamos los elementos a la izquierda en el menú móvil */
+    background-color: black;
+    height: 100vh;
+    overflow-y: auto;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 999;
+    opacity: 0;
+    padding-top: 60px; /* Añadimos padding para que el contenido no quede detrás del botón de cerrar */
+  }
+
+  .menu-horizontal.menu_opened {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .menu-horizontal nav {
+    display: flex;
+    flex-direction: column; /* Alineamos los enlaces verticalmente */
+    width: 100%; /* Ocupar todo el ancho del menú */
+  }
+
+  .menu-horizontal nav a {
+    color: white;
+    line-height: 40px; /* Reduje la altura de línea para mejor espaciado */
+    font-size: 1.2rem; /* Reduje el tamaño de la fuente */
+    padding: 1rem 2rem; /* Añadí padding para que los enlaces sean más fáciles de tocar */
+    border-bottom: 1px solid #eee; /* Añadí un separador entre enlaces */
+    margin: 0; /* Eliminé márgenes innecesarios */
+    display: block; /* Aseguramos que cada enlace ocupe una línea completa */
+  }
+
+  .menu-horizontal nav a:hover,
+  .menu-horizontal nav a.selected {
+    color: purple;
+    text-decoration: underline;
+  }
+
+  .menu-horizontal nav a:focus {
+    outline: 2px dashed blue;
+    outline-offset: 4px;
+  }
+
+  .menu-horizontal nav a::after {
+    content: none;
+  }
+
+  .search-bar {
+    margin: 1rem 2rem; /* Ajusté el margen de la barra de búsqueda */
+    border: 1px solid #ccc; /* Cambié el color del borde para mejor visibilidad */
+    border-radius: 5px; /* Reduje el radio del borde */
+  }
+
+  .btn-login {
+    margin: 1rem 2rem; /* Ajusté el margen del botón de inicio de sesión */
+    border-radius: 5px; /* Reduje el radio del borde */
+    padding: 0.75rem 1.5rem; /* Ajusté el padding del botón */
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 1rem; /* Ajusté el margen del botón de abrir */
+  }
+
+  .close-menu {
+    align-self: flex-start; /* Alineamos el botón de cerrar en la esquina superior izquierda */
+    padding: 1rem; /* Ajusté el padding del botón de cerrar */
+    margin-left: 1rem; /* Añadí margen izquierdo al botón de cerrar */
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
