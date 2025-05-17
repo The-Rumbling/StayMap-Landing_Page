@@ -4,7 +4,23 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
   }
-  
+
+.btn-appweb {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #CB6CE6; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-appweb:hover {
+  background-color: #000000;
+}
+
   body {
     height: 100vh;
     background-color: #000;
